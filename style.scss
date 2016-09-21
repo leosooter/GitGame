@@ -1,0 +1,171 @@
+$screen-color: rgb(245, 252, 245);
+
+body{
+  width: 1300px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+main{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid black;
+  h3{
+    font-size: 18px;
+    margin: 3px 8px;
+  }
+}
+
+#computer{
+  margin-bottom: 20px;
+  padding: 30px;
+  color: darken($screen-color, 20%);
+  background-color: $screen-color;
+  border: 1px solid transparent;
+}
+
+#desktop{
+  height: 350px;
+  padding: 30px;
+  color: darken($screen-color, 20%);
+  border: 1px solid transparent;
+}
+
+#assignments{
+  height: 200px;
+  margin-top: 100px;
+  color: rgb(35, 75, 91);
+  background-color: rgb(141, 172, 185);
+}
+#repository{
+  display: none;
+}
+#git-staging{
+  display: inline-block;
+  height: 150px;
+  width: 300px;
+  color: rgb(35, 75, 91);
+  background-color: rgb(147, 185, 141);
+}
+#git-commit{
+  display: inline-block;
+  height: 150px;
+  width: 300px;
+  color: rgb(35, 75, 91);
+  background-color: rgb(185, 183, 141);
+}
+
+.folder{
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
+  padding-left: 10px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.file{
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  opacity: 1;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(69, 107, 122);
+  border: 1px solid rgb(35, 75, 91);
+}
+
+#git-hub{
+  position: absolute;
+  opacity: 0;
+  height: 245px;
+  width: 700px;
+  right: -700px;
+  top: -30px;
+  background-image: url("images/cloud.png");
+  background-size: contain;
+  h2{
+    opacity: 0;
+    margin-top: 90px;
+    margin-left: 280px;
+    font-size: 24px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    color: gold;
+    text-shadow: 1px 1px 1px goldenrod;
+  }
+}
+
+#terminal-wrapper{
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+#terminal {
+  display: inline-block;
+  width: 700px;
+  height: 220px;
+  overflow: scroll;
+  padding-left: 10px;
+  border: 1px solid black;
+  li, label, input{
+    font-size: 16px;
+  }
+  li{
+    list-style-type: none;
+    margin-left: -40px;
+  }
+}
+#terminal-line{
+  width: 450px;
+  margin-left: 3px;
+  border: none;
+  outline: none;
+}
+
+#instruction-wrapper{
+  height: 200px;
+  width: 400px;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid black;
+  p{
+    span{
+      color: green;
+    }
+  }
+  ul{
+    li{
+      span{
+        color: red;
+      }
+    }
+    li:last-child{
+      display: none;
+    }
+  }
+  ul:hover{
+    li:last-child{
+      display: block;
+    }
+  }
+}
+
+//Dynamically addes classes
+.outline{
+  color: gold !important;
+  border-color: gold !important;
+}
+
+.visible{
+  display: inline-block !important;
+}
+
+.heavenly-light{
+  box-shadow: 0px 0px 4px gold;
+}

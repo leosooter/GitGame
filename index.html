@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GitGame</title>
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="transit.js"></script>
+    <script src="javascript.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="git-hub">
+        <h2>~ GitHub ~</h2>
+      </div>
+
+      <div id="computer" class="outline">
+        <h3>Computer</h3>
+        <div id="desktop">
+          <h3>Desktop</h3>
+
+          <div id="assignments" class="folder">
+            <h3>Assignments</h3>
+
+            <div id="index.html" class="file">
+              index.html
+            </div>
+
+            <div id="styles.css" class="file">
+              styles.css
+            </div>
+
+            <div id="javascript.js" class="file">
+              javascript.js
+            </div>
+            <div id="repository" class="folder">
+              <h3>Git</h3>
+              <div id="git-staging" class="folder">Staging</div>
+
+              <div id="git-commit" class="folder">Repository</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="terminal-wrapper">
+        <div id="terminal">
+          <ul id="lines"></ul>
+          <label id="cursor">Computer:<span id="line-level">~</span> user$</label><input id="terminal-line" type="text" name="name" value="">
+        </div>
+        <div id="instruction-wrapper">
+          <h3>Create a local Repository and push to Github</h3>
+          <p id="instructions">Use the command line to navigate to the 'Assignments' folder</p>
+          <ul>
+            <li>Hover to see Hint</li>
+            <li id="hint">Use 'cd desktop' then 'cd Assignments' <span>or</span> 'cd desktop/Assignments'</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
